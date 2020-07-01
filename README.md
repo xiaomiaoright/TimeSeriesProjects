@@ -42,7 +42,7 @@ df.plot.pie()      pie chart
     * line/marker properties:size, color
     * legend
     * plot tile, xlabel, y label
-## Related Code: [here]
+## Related Code: [here](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/PandasDataVisualization.ipynb)
 
 # Part 3: Time Series with Pandas
 
