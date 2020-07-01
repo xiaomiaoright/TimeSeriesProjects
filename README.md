@@ -13,7 +13,44 @@ In the following section, the project will show how to work with those date type
 ## Date and time in python
 [Related Coding](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/NumpyPandasTimeSeries.ipynb)
 
-## Time series data visualization example
+## Time series data visualization simple example
 * Data Source:  bicycle counts on [Seattle's Fremont Bridge](http://www.openstreetmap.org/#map=17/47.64813/-122.34965)
 * Dataset can be download from [here](https://data.seattle.gov/Transportation/Fremont-Bridge-Hourly-Bicycle-Counts-by-Month-Octo/65db-xm6k)
 * [Code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/TimeSeriesDataVisualization.ipynb)
+
+# Part 2: Data Visualization with Pandas
+In this section, a general introduction of Pandas built-in visualization is introduced. Topics:
+* Different Types of Pandas visulizations
+<pre>
+df.plot.hist()     histogram
+df.plot.bar()      bar chart
+df.plot.barh()     horizontal bar chart
+df.plot.line()     line chart
+df.plot.area()     area chart
+df.plot.scatter()  scatter plot
+df.plot.box()      box plot 
+df.plot.kde()      kde plot
+df.plot.hexbin()   hexagonal bin plot
+df.plot.pie()      pie chart
+</pre>
+* Two ways to call plot method:
+    * df['col'].plot.hist()
+    * df['col'].plot(kind = 'area')
+    * df['col'].hist()
+* Customizing Pandas plots
+    * plotsize
+    * line/marker properties:size, color
+    * legend
+    * plot tile, xlabel, y label
+## Related Code: [here]
+
+# Part 3: Time Series with Pandas
+
+
+# Part 5: Time Series Analysis with Statsmodels
+
+# Part 6: General Forecasting Models
+
+# Part 7: Deep Learning for Time Series Forecasting
+
+# part *8: Facebook's Prophet Library
