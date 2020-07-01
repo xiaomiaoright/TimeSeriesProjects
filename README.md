@@ -42,10 +42,32 @@ df.plot.pie()      pie chart
     * line/marker properties:size, color
     * legend
     * plot tile, xlabel, y label
-## Related Code: [here](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/PandasDataVisualization.ipynb)
+### Related Code: [here](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/PandasDataVisualization.ipynb)
 
 # Part 3: Time Series with Pandas
+## Overview
+In this section, a systemtic study and project sample will be demonstrated on the functions/operations available in Pandas package to process Time Series data
 
+## DateTime Index
+* Create a date/datetime/time object
+
+"""python
+from datetime import datetime
+my_date_time = datetime(my_year,my_month,my_day,my_hour,my_minute,my_second)
+my_date_time.day
+my_date_time.hour
+"""
+* Create datetime range
+* create DateTime Index
+## Resampling
+
+## Shifting
+
+## Rolling and Expanding
+
+## Visualization
+
+### Related Code: [here]
 
 # Part 5: Time Series Analysis with Statsmodels
 
