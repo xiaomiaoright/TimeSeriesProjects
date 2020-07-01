@@ -11,6 +11,4 @@ Background: Pandas was developed in the context of financial modeling, so it con
 
 In the following section, the project will show how to work with those date types in python.
 ## Date and time in python
-
-### Native python dates and times: > datetime and dateutil>
-Python's basic objects for date and times is in datetime module
+[Related Coding](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/NumpyPandasTimeSeries.ipynb)
