@@ -51,12 +51,14 @@ In this section, a systemtic study and project sample will be demonstrated on th
 ## DateTime Index
 * Create a date/datetime/time object
 
-'''python
+```python
 from datetime import datetime
 my_date_time = datetime(my_year,my_month,my_day,my_hour,my_minute,my_second)
 my_date_time.day
 my_date_time.hour
-'''
+```
+
+
 * Create datetime range
 * create DateTime Index
 ## Resampling
