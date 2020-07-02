@@ -126,8 +126,26 @@ A common operation on time-series data is to shift or "lag" the values back and 
 * shift: shifts the data
 * tshift: shifts the time index
 
-### 
+### Shifting Project
+[code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/TimeSeries_Shifting.ipynb)
 ## Rolling and Expanding
+### What is Rolling?
+Rolling-window analysis of a time-series model assesses:
+* The stability of the model over time. A common time-series model assumption is that the coefficients are constant with respect to time. Checking for instability amounts to examining whether the coefficients are time-invariant.
+* The forecast accuracy of the model.
+divide the data into "windows" of time, and then calculate an aggregate function for each window. In this way we obtain a simple moving average. 
+
+### Why rolling?
+* Access stability
+* Forecasting accuracy
+
+### Methods of rolling
+```python
+Series.rolling(self, window, min_periods=None, center=False, win_type=None, on=None, axis=0, closed=None)
+```
+
+### Combine grouping with rolling
+
 
 ## Visualization
 
