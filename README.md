@@ -93,9 +93,40 @@ In this section, a systemtic study and project sample will be demonstrated on th
         df.index.argmax()
         ```
 ## Resampling
+### What is resampling?
+To represent the current data with a different frequency. For example, current dataset is daily, update the data to weekly, or monthly, etc.
+### Why resampling?
+* Problem framing: if your data is not available at the same frequency that you want to make predictions.
+* Feature Engineering: provide additional structure or insight into the learning problem for supervised learning models
+### Two types of resampling
+* Up-sampling: to higher frequency, could be missing data
+* Down-sampling: to lower frequency
+### Two functions of resampling - down-sampling
+* resample()
+    * Aggregates data based on specified frequency and aggregation function.
+    * Aggregation: sum, mean, max, etc.
+* asfreq()
+    * Selects data based on the specified frequency and returns the value at the end of the specified interval.
+### Two functions of resample - up-sampling
+* fill missing data with forward fill (ffill)
+* fill missing data with backward fill (bfil)
 
+### Resampling project 
+[code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/TimeSeries_Resampling.ipynb)
 ## Shifting
+### What is Shifting?
+A common operation on time-series data is to shift or "lag" the values back and forward in time, such as to calculate percentage change from sample to sample 
+* Series.shift(self, periods=1, freq=None, axis=0, fill_value=None)
+### Why shifting?
+* Historic comparison
+* Prediction
+* Example: ROI 
 
+### Two types of Shifting
+* shift: shifts the data
+* tshift: shifts the time index
+
+### 
 ## Rolling and Expanding
 
 ## Visualization
