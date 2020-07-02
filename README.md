@@ -145,9 +145,28 @@ Series.rolling(self, window, min_periods=None, center=False, win_type=None, on=N
 ```
 
 ### Combine grouping with rolling
+```python
+df.groupby('col1').rolling(2).sum() # cauclate sum of two consecutive elements
+df.groupby('col1').expanding().sum() # Accumulative sum
+```
 
 
-## Visualization
+### Expanding
+Taking into account from the start point to the end point
+
+### Rolling Expanding Project
+[Code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/TimeSeries_RollingExpanding.ipynb)
+
+## Visualization of time series data
+* Plotting
+* set plot axises, title, legend, autoscale, etc
+* Set xlimits, ylimits
+    * by arguments: df['col'].plot(figsize=(12,6), xlim=['2020-01-01','2020-01-31], ylim=[20,50])
+    * by slicing data set: df['col']['2012-01-01':'2012-12-01' ]
+* Color and style
+* X Ticks
+* Major vs. Minor Axis Values
+* Gridlines
 
 ### Related Code: [here]
 
