@@ -172,6 +172,21 @@ Taking into account from the start point to the end point
 [Code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/TimeSeries_VisualizationFormating.ipynb)
 
 # Part 5: Time Series Analysis with Statsmodels
+## Properties of Time Series Data:
+* Trends: upward, downward, horizontal/stationary
+* Seasonality: Repeating trends
+* Cyclical: Trends with no set repetition
+## Hodrick Prescott filter
+H-P filter seperates time series data y_t into a trend compoent T_t and cyclical component c_t
+y_{t} = \tau _{t} + c_{t}
+## Introduction: Statsmodels module 
+
+## ETS Decomposition
+
+## EWMA Thoery
+
+## Holt - Winters Methods Theory
+
 
 # Part 6: General Forecasting Models
 
