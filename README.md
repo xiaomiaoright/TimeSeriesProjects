@@ -168,7 +168,8 @@ Taking into account from the start point to the end point
 * Major vs. Minor Axis Values
 * Gridlines
 
-### Related Code: [here]
+### Time Series Visualization and Formating Project 
+[Code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/TimeSeries_VisualizationFormating.ipynb)
 
 # Part 5: Time Series Analysis with Statsmodels
 
