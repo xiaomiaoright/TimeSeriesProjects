@@ -250,9 +250,23 @@ When seasonal variations are roughly constatnt through series
 When seasonal variations are changing proportional to the level of the series
 
 ### Methods:
-* Single Exponential Smoothing
-![equation](https://latex.codecogs.com/gif.latex?\gamma)
+* Single Exponential Smoothing: smoothing factor alpha
 
+![equation](https://latex.codecogs.com/gif.latex?y_{0}&space;=&space;x_{0}x&space;\rightarrow&space;y_{t}&space;=&space;(1-\alpha)y_{t-1}&space;&plus;&space;\alpha&space;x_{t})
+
+* Double Exponential Smoothing: trend factor beta
+    * level: ![equation](https://latex.codecogs.com/gif.latex?l_{t}&space;=&space;(1-\alpha)l_{t-1}&space;&plus;&space;\alpha&space;x_{t})
+    * trend: ![equation](https://latex.codecogs.com/gif.latex?b_{t}&space;=&space;(1-\beta)b_{t-1}&space;&plus;&space;\beta&space;(l_{t}&space;-&space;l_{t-1}))
+    * fitted model ![equeation](https://latex.codecogs.com/gif.latex?y_{t}&space;=&space;l_{t}&space;&plus;&space;b_{t})
+    * forecasting model ![equation](https://latex.codecogs.com/gif.latex?\hat{y}_{t&plus;h}&space;=&space;l_{t}&space;&plus;&space;hb_{t})
+
+* Triple Exponential Smoothing: gamma for seasonality
+    * level: ![equation](https://latex.codecogs.com/gif.latex?l_{t}&space;=&space;(1-\alpha)l_{t-1}&space;&plus;&space;\alpha&space;x_{t})
+    * trend: ![equation](https://latex.codecogs.com/gif.latex?b_{t}&space;=&space;(1-\beta)b_{t-1}&space;&plus;&space;\beta&space;(l_{t}&space;-&space;l_{t-1}))
+    * seasonality: ![equation](https://latex.codecogs.com/gif.latex?c_{t}&space;=&space;(1-\gamma&space;)c_{t-L}&space;&plus;&space;\gamma(x_{t}&space;-&space;l_{t-1}&space;-&space;b_{t-1}))
+    * fitted model: ![equation](https://latex.codecogs.com/gif.latex?y_{t}&space;=&space;(l_{t}&space;&plus;&space;b_{t})c_{t})
+    * prediction: ![equation](https://latex.codecogs.com/gif.latex?\hat{y}_{t&plus;m}&space;=&space;(l_{t}&space;&plus;&space;mb_{t})c_{t-L&plus;1&plus;(m-1)modL})
+        * L: number of divisions per cycle
 
 # Part 6: General Forecasting Models
 
