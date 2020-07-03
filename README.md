@@ -267,9 +267,48 @@ When seasonal variations are changing proportional to the level of the series
     * fitted model: ![equation](https://latex.codecogs.com/gif.latex?y_{t}&space;=&space;(l_{t}&space;&plus;&space;b_{t})c_{t})
     * prediction: ![equation](https://latex.codecogs.com/gif.latex?\hat{y}_{t&plus;m}&space;=&space;(l_{t}&space;&plus;&space;mb_{t})c_{t-L&plus;1&plus;(m-1)modL})
         * L: number of divisions per cycle
+### Double and Triple Exponential Moving Average Project
+[Code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/Statsmodel_HoltWinters_EWMA.ipynb)
 
 # Part 6: General Forecasting Models
+## Tools for Time Series Data analysis
+* Pandas, Numpy, Statsmodels
+## Methods to Model Time Series Behavior
+* HP filter: trend + cyclical
+* ETS: error trend seasonality
+* Simple Moving Average
+* Simple Exponential Moving Average
+* Double Exponential Moving Average
+* Triple Exponential Moving Average
+## Forecasting Time Series Data
+Precedure: Choose Model > Split Data > Fit Model on Train set > Evaluate Model on Test set > Re-fit model on entire data set > forecast future data
 
+## Introduction
+### Build model and predict
+
+### Evaluation:
+* MAE: Average residuals, won't alert if forecasting points were way off
+* MSE: Units
+* RMSE: 
+
+
+### Stationary dataset
+
+
+### Intorduction to Forecasting model project
+[code]()
+## ACF
+
+## PACF
+
+## AR
+
+
+## Descriptive Statistics
+
+## ARIMA
+
+## 
 # Part 7: Deep Learning for Time Series Forecasting
 
 # part *8: Facebook's Prophet Library
