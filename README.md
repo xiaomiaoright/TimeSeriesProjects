@@ -296,11 +296,26 @@ Precedure: Choose Model > Split Data > Fit Model on Train set > Evaluate Model o
 
 
 ### Intorduction to Forecasting model project
-[code]()
-## ACF
+[code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/Forecasting_Intro.ipynb)
 
-## PACF
+## ACF: AutoCorrelation function plot
+### Correlation:
+* (-1, 1)
+* strength of linear relationship
 
+### AutoCorrelation plot: Correlogram
+* Shows correlation of the series with itself lagged by x time units
+* y is correlation, x is number of time units lagged
+* Why? to answer question like how correlated are today's sales to yesterday's sales
+* Typical features:
+    * gradual decline
+    * sharp drop off
+
+### PACF Partial AutoCorrelation function plot
+Only describes the direct relationshiop between an obeservation and its lag
+
+### Why important?
+help choose order parameters for ARIMA based models
 ## AR
 
 
