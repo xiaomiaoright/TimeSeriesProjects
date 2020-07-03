@@ -316,13 +316,56 @@ Only describes the direct relationshiop between an obeservation and its lag
 
 ### Why important?
 help choose order parameters for ARIMA based models
-## AR
 
+### ACF PACF Project
+[Code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/Forcasting_ACF_PACF.ipynb)
+## AR
+* In moving average model in Holt-Winters, using linear combination of predictors (level, trend, seasonal)
+
+### Autoregssion
+* in Autoregression model, forecast using a linear combination of past values of the variable. Autoregression run against a set of lagged values of order p.
+* the output variable depends linearly on its own previous values and on a stockastic term
+
+### function
+* AR(1)
+![equation](https://latex.codecogs.com/gif.latex?y_{t}&space;=&space;c&space;&plus;&space;\phi&space;y_{t-1}&space;&plus;&space;\varepsilon&space;_{t})
+* AR(2)
+![equation](https://latex.codecogs.com/gif.latex?y_{t}&space;=&space;c&space;&plus;&space;\phi&space;_{1}y_{t-1}&plus;&space;\phi&space;_{2}y_{t-2}&space;&plus;&space;\varepsilon&space;_{t})
+* Higher oreder AR models become complex. Might take into noise.
+
+#### Simplified AR Model
 
 ## Descriptive Statistics
 
 ## ARIMA
-
+### Overview
+* one of the most common time series models
+* ARIMA is not capable of perfectly predicting any time series data. For example: stock price, depending on time and many other factors
+* ARIMA works well when working with a time series where data is directly related to time stamp, such as airline passenger data
+* Purpse:
+    * Better understand data
+    * Future prediction
+* Types:
+    * Non seasonal ARIMA
+    * Seasonal ARIMA
+* data: Non stationary dataset
+    * intial differencing step -> integrated to eliminate non-stationary
+* Compenents:
+    * P: AR autoregression
+        * A regression model that utilizes the depenent relationship between a current observation and obervations over a previous period
+    * d: I Integrated
+        * Differencing of observations( obervation - previous obervation) to make data time series stationary
+    * q: MA Moving Average
+        * use dependency between an observation and a residual from a moving average model applied to laged observations
+* Stationary: constant mean and variance overtime
+    * allow model to predice mean and variance, covaraiance, be the same in the future
+    * Augmented Dickey-Fuller test
+    * if data is non-stationary, need to transform it to stationary (integrate, differencing) to evaluate it
+        * seasonal data: difference by season
+        * seasonal ARIMA: taking seasonal difference of first difference
+* How to choose p, d, q
+    * Mehtod 1: ACP PACP
+    * Method 2: Grid Search
 ## 
 # Part 7: Deep Learning for Time Series Forecasting
 
