@@ -177,7 +177,7 @@ Taking into account from the start point to the end point
 * Seasonality: Repeating trends
 * Cyclical: Trends with no set repetition
 ## Hodrick Prescott filter
-H-P filter seperates time series data <a href="https://www.codecogs.com/eqnedit.php?latex=y_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{t}" title="y_{t}" /></a> into a trend compoent T_t and cyclical component c_t
+H-P filter seperates time series data <a href="https://www.codecogs.com/eqnedit.php?latex=y_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{t}" title="y_{t}" /></a> into a trend compoent <a href="https://www.codecogs.com/eqnedit.php?latex=\tau_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\tau_{t}" title="\tau_{t}" /></a> and cyclical component <a href="https://www.codecogs.com/eqnedit.php?latex=c_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_{t}" title="c_{t}" /></a>
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=y_{t}&space;=&space;\tau&space;_{t}&space;&plus;&space;c_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{t}&space;=&space;\tau&space;_{t}&space;&plus;&space;c_{t}" title="y_{t} = \tau _{t} + c_{t}" /></a>
 
