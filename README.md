@@ -229,11 +229,29 @@ Non linear rate
 
     *Series.ewm(self, com=None, span=None, halflife=None, alpha=None, min_periods=0, adjust=True, ignore_na=False, axis=0)
     * Recent data is weighted more than older data
-        * Simple Exponential Smoothing
+        * Simple Exponential Smoothing:with one smoothing factor alpha; failed to other factors like trend and seasonality
         * Triple Exponential Smoothing
         * Holt-Winters Methods
+### EWMA Simple Exponential Smoothing Project
+[Code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/Statsmodel_EWMA.ipynb)
 
 ## Holt - Winters Methods Theory
+### What is H_W method?
+Holt Winter seasonal method: three smoothing equations:
+* level: <a href="https://www.codecogs.com/eqnedit.php?latex=\alpha" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\alpha" title="\alpha" /></a>
+* trend: <a href="https://www.codecogs.com/eqnedit.php?latex=\beta" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\beta" title="\beta" /></a>
+* seasonal component: <a href="https://www.codecogs.com/eqnedit.php?latex=\gamma" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\gamma" title="\gamma" /></a>
+
+### Two variations:
+Differ in the nature of the seasonal component
+* Additive method
+When seasonal variations are roughly constatnt through series
+* multiplicative method
+When seasonal variations are changing proportional to the level of the series
+
+### Methods:
+* Single Exponential Smoothing
+![equation](https://latex.codecogs.com/gif.latex?\gamma)
 
 
 # Part 6: General Forecasting Models
