@@ -178,9 +178,9 @@ Taking into account from the start point to the end point
 * Cyclical: Trends with no set repetition
 ## Hodrick Prescott filter
 H-P filter seperates time series data y_t into a trend compoent T_t and cyclical component c_t
-```math
-y_{t} = \tau _{t} + c_{t}
-```
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=y_{t}&space;=&space;\tau&space;_{t}&space;&plus;&space;c_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{t}&space;=&space;\tau&space;_{t}&space;&plus;&space;c_{t}" title="y_{t} = \tau _{t} + c_{t}" /></a>
+
 ## Introduction: Statsmodels module 
 
 ## ETS Decomposition
