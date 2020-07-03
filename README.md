@@ -176,13 +176,21 @@ Taking into account from the start point to the end point
 * Trends: upward, downward, horizontal/stationary
 * Seasonality: Repeating trends
 * Cyclical: Trends with no set repetition
-## Hodrick Prescott filter
-H-P filter seperates time series data <a href="https://www.codecogs.com/eqnedit.php?latex=y_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{t}" title="y_{t}" /></a> into a trend compoent <a href="https://www.codecogs.com/eqnedit.php?latex=\tau_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\tau_{t}" title="\tau_{t}" /></a> and cyclical component <a href="https://www.codecogs.com/eqnedit.php?latex=c_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_{t}" title="c_{t}" /></a>
-
+## Introduction: Statsmodels module 
+* H-P filter seperates time series data <a href="https://www.codecogs.com/eqnedit.php?latex=y_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{t}" title="y_{t}" /></a> into a trend compoent <a href="https://www.codecogs.com/eqnedit.php?latex=\tau_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\tau_{t}" title="\tau_{t}" /></a> and cyclical component <a href="https://www.codecogs.com/eqnedit.php?latex=c_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c_{t}" title="c_{t}" /></a>
 <a href="https://www.codecogs.com/eqnedit.php?latex=y_{t}&space;=&space;\tau&space;_{t}&space;&plus;&space;c_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_{t}&space;=&space;\tau&space;_{t}&space;&plus;&space;c_{t}" title="y_{t} = \tau _{t} + c_{t}" /></a>
 
-## Introduction: Statsmodels module 
-
+* Determined by minimizing quadratic loss function, where <a href="https://www.codecogs.com/eqnedit.php?latex=\lambda" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /></a> is a smoothing parameter
+<a href="https://www.codecogs.com/eqnedit.php?latex=min_{\tau&space;_{t}}\sum&space;_{t=1}^{T}{c_{t}}^{2}&plus;\lambda&space;\sum&space;_{t=1}^{T}[(\tau&space;_{t}&space;-&space;\tau&space;_{t-1})&space;-&space;(\tau&space;_{t-1}&space;-&space;\tau&space;_{t-2})]^{2}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?min_{\tau&space;_{t}}\sum&space;_{t=1}^{T}{c_{t}}^{2}&plus;\lambda&space;\sum&space;_{t=1}^{T}[(\tau&space;_{t}&space;-&space;\tau&space;_{t-1})&space;-&space;(\tau&space;_{t-1}&space;-&space;\tau&space;_{t-2})]^{2}" title="min_{\tau _{t}}\sum _{t=1}^{T}{c_{t}}^{2}+\lambda \sum _{t=1}^{T}[(\tau _{t} - \tau _{t-1}) - (\tau _{t-1} - \tau _{t-2})]^{2}" /></a>
+* <a href="https://www.codecogs.com/eqnedit.php?latex=\lambda" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\lambda" title="\lambda" /></a> has default values:
+    * 1600: quarterly data
+    * 6.25: annual data
+    * 129600: monthly daata
+* Implement with statsmodels module with hpfilter
+```python
+from statsmodels.tsa.filters.hp_filter import hpfilter
+gdp_cycle, gdp_trend = hpfilter(df['realgdp'], lamb=1600)
+```
 ## ETS Decomposition
 
 ## EWMA Thoery
