@@ -215,8 +215,23 @@ When trend is linear and seasonality and trend seems to be constants
 * Multiplicative model
 Non linear rate
 
+### Decomposition Project 
+[Code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/Statsmodels_ETS.ipynb)
 
 ## EWMA Thoery
+### SMA vs. EWMA
+* SMA: Simple Moving Average
+    * Entire model is constrained to the same window size
+    * Disadvantage: 1. lag by size of window; 2. smaller window, larger noise; 3. never reach full peak or valley of data due to average; 4. does not predict future behavior, just describe trends; 5. Extreme historical values skew SMA significantly
+    * .rolling()
+
+* EWMA: Exponentially weighted moving average
+
+    *Series.ewm(self, com=None, span=None, halflife=None, alpha=None, min_periods=0, adjust=True, ignore_na=False, axis=0)
+    * Recent data is weighted more than older data
+        * Simple Exponential Smoothing
+        * Triple Exponential Smoothing
+        * Holt-Winters Methods
 
 ## Holt - Winters Methods Theory
 
