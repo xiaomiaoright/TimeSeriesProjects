@@ -191,7 +191,30 @@ Taking into account from the start point to the end point
 from statsmodels.tsa.filters.hp_filter import hpfilter
 gdp_cycle, gdp_trend = hpfilter(df['realgdp'], lamb=1600)
 ```
-## ETS Decomposition
+### Statsmodels HPFilter Project on Time Series
+[Code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/Statsmodels_hpfilter.ipynb)
+
+## ETS 
+### What is ETS?
+Error - Trend - Seasonality
+
+### Models related to ETS
+* Exponential Smothing
+* Trend Methods Models
+* ETS Decomposition
+
+### ETS Decomposition
+Statsmodels provides a seasonal decomposition tool to seperate different components
+* eg. HPFilter: trend + cycle
+* ETS models will take each term for smoothing and add operations. Then create a model to fit data
+* Why ETS: visualize time series data with ETS is a good way to understand data behavior
+
+### ETS for Time Series
+* Additive model
+When trend is linear and seasonality and trend seems to be constants
+* Multiplicative model
+Non linear rate
+
 
 ## EWMA Thoery
 
