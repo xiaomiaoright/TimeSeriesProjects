@@ -332,10 +332,35 @@ help choose order parameters for ARIMA based models
 * AR(2)
 ![equation](https://latex.codecogs.com/gif.latex?y_{t}&space;=&space;c&space;&plus;&space;\phi&space;_{1}y_{t-1}&plus;&space;\phi&space;_{2}y_{t-2}&space;&plus;&space;\varepsilon&space;_{t})
 * Higher oreder AR models become complex. Might take into noise.
+* AR(p)
+Let the statsmodels to choose the order p
 
-#### Simplified AR Model
+
+### AutoRegression with statsmodel.tsa.ar_model project
+[Code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/Forecasting_AR.ipynb)
 
 ## Descriptive Statistics
+To understand the attributes of time series data
+### Stationary
+    * Dickey-Fuller test
+        * performs a test of classic null hypothesis test and return p value
+        * p < 0.05 reject null ---> dataset is stationary
+
+### Causality
+    * Granger Causality Test
+        * determin if one time series is useful in forecasting another
+
+### Evalute forecasts:
+    * MAE
+    * MSE
+    * RMSE
+    * AIC
+        * evalute a collection of models
+        * Penalties are provided for the number of parameters used to prevent overfitting
+    * BIC
+        * AIC using a Bayesian approach
+### Seaonality Plots
+
 
 ## ARIMA
 ### Overview
