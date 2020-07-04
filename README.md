@@ -360,7 +360,8 @@ To understand the attributes of time series data
     * BIC
         * AIC using a Bayesian approach
 ### Seaonality Plots
-
+### Descriptive Statistics of Time Series Data and model project
+[code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/Forecasting_Descriptive%20Statistics.ipynb)
 
 ## ARIMA
 ### Overview
@@ -378,10 +379,14 @@ To understand the attributes of time series data
 * Compenents:
     * P: AR autoregression
         * A regression model that utilizes the depenent relationship between a current observation and obervations over a previous period
+        * evolving variable of interest is regressed on its own lagged
     * d: I Integrated
         * Differencing of observations( obervation - previous obervation) to make data time series stationary
     * q: MA Moving Average
         * use dependency between an observation and a residual from a moving average model applied to laged observations
+        * regression error is linear combination of error terms whose values occurred contemporaneously and at various time in past
+        * smooth out noise from time series
+
 * Stationary: constant mean and variance overtime
     * allow model to predice mean and variance, covaraiance, be the same in the future
     * Augmented Dickey-Fuller test
@@ -391,6 +396,24 @@ To understand the attributes of time series data
 * How to choose p, d, q
     * Mehtod 1: ACP PACP
     * Method 2: Grid Search
+
+### ARMA(No differencing term)
+
+### Choosing ARIMA Orders: p,d,q
+* If autocorrlection plot shows positive autocorrelation at first lag (lag-1), then it suggest to use AR terms in relation to lag
+* if negative, then use MA terms
+* p: # of lag observations 
+* d: # times that raw observations are differenced
+* q: size of moving average window (order of moving average)
+### How to determine? ACF/PACF
+* Typically a shorp drop after lag 'K' of PACF, suggested AR(k) model should be used
+* Ifthere is a gradual decline， use MA model
+
+
+### Greid search p, d, q combinations
+* pmdarima: 
+    * Use AIC as metric to compare models
+
 ## 
 # Part 7: Deep Learning for Time Series Forecasting
 
