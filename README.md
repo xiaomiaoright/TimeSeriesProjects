@@ -423,7 +423,12 @@ m represent the number of rows in each seasonal cycle
 ## SARIMAX - SARIMA X
 X means function support exogenous regressor variables
 
-## 
+
+
+## Vector Autoregression VAR
+
+
+
 # Part 7: Deep Learning for Time Series Forecasting
 
 # part *8: Facebook's Prophet Library
