@@ -416,6 +416,13 @@ To understand the attributes of time series data
 ### Project Choosing ARIMA Order
 [code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/Forecasting_ChoosingARIMAOrders.ipynb)
 
+## SARIMA - Seasonal ARIMA
+(p,d,q) m
+m represent the number of rows in each seasonal cycle
+
+## SARIMAX - SARIMA X
+X means function support exogenous regressor variables
+
 ## 
 # Part 7: Deep Learning for Time Series Forecasting
 
