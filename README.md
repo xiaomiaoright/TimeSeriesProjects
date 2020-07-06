@@ -413,6 +413,8 @@ To understand the attributes of time series data
 ### Greid search p, d, q combinations
 * pmdarima: 
     * Use AIC as metric to compare models
+### Project Choosing ARIMA Order
+[code](https://github.com/xiaomiaoright/TimeSeriesProjects/blob/master/Forecasting_ChoosingARIMAOrders.ipynb)
 
 ## 
 # Part 7: Deep Learning for Time Series Forecasting
