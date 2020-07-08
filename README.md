@@ -428,7 +428,23 @@ X means function support exogenous regressor variables
 ## Vector Autoregression VAR
 
 
+## VARMA
 
 # Part 7: Deep Learning for Time Series Forecasting
+
+## Neural Networks
+Feed Forward Network: input -> aggregation -> activation function -> output
+## Keras Basics
+Output back to input. Cells that are a function of inputs from previous time steps are known as memory cells. 
+## RNN
+
+## LSTMS and GRU
+An issue RNN has is that after awhile the network will begin to 'forget' the first inputs, as information is lost at each step going through RNN
+* so need 'long term memory'
+
+## Keras and RNN
+
+
+
 
 # part *8: Facebook's Prophet Library
